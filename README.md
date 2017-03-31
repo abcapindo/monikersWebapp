@@ -2,7 +2,8 @@
 A webapp version created using angular.js and material angular based on the card game Monikers.
 
 ## Building the App
-This project is built using gulp. 
+This project is built using gulp.
+
 To build the project:
 
 `gulp build`
