@@ -3,7 +3,7 @@ A webapp version created using angular.js and material angular based on the card
 
 ## Building the App
 This project is built using gulp. To build the project:
-\t gulp build
+`gulp build`
 To run the project:
-\t gulp watch
+`gulp watch`
 This will clean, build, and launch the webapp onto a simple node.js server.
