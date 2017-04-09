@@ -1,0 +1,83 @@
+<div ng-controller="GameCtrl">
+  <div class="container">
+    <div class="col-md-4 col-md-offset-4" ng-show="gameCardShow">
+      <div class="panel panel-default">
+        <div class="panel-heading text-center">
+          {{card.Person}}
+        </div>
+        <div class="panel-body">
+          {{card.Text}}
+          <hr />
+          <div class="text-center ">
+            {{card.Genre}}
+          </div>
+          <!-- <div ng-class="point-{{card.Points}}-color"> -->
+            <!-- {{card.Points}} -->
+          <!-- </div> -->
+        </div>
+
+          <div class="panel-footer text-center">
+            <div class="text-center">
+              <button type="button" class="btn btn-warning"><i class="fa fa-refresh"></i></button>
+              <button type="button" class="btn btn-success"><i class="fa fa-check" aria-hidden="true"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 col-md-offset-4" ng-show="startGameShow">
+      <div class="panel panel-default">
+        <div class="panel-heading text-center">
+          Start Game
+        </div>
+        <div class="panel-body">
+          <div class="text-center ">
+            Select which team will go first, or click random and a team will be selected for you.
+          </div>
+          <div class="text-center ">
+            <label>
+              <input type="radio" ng-model="team" value=0>
+              {{teams[0]}}
+            </label><br/>
+            <label>
+              <input type="radio" ng-model="team" value=1>
+              {{teams[1]}}
+            </label><br/>
+            <button type="button" class="btn btn-primary" ng-click="teamSelection()">Random</button>
+            <br />
+            <h3>Team Starting....</h3>
+            <h3>{{teams[team]}}</h3>
+          </div>
+          <div class="text-center" ng-show="timeShow">
+            <h2>{{time}}</h2>
+          </div>
+        </div>
+
+          <div class="panel-footer text-center">
+            <!-- <div class="btn-group"> -->
+            <div class="text-center">
+              <button type="button" class="btn btn-success" ng-click="startGame()">Start</button>
+          </div>
+        </div>
+      </div>
+
+
+    <!-- <script type="text/ng-template" id="myModalContent.html">
+    <div class="modal-header">
+        <h3 class="modal-title" id="modal-title">I'm a modal!</h3>
+    </div>
+    <div class="modal-body" id="modal-body">
+        <ul>
+            <li ng-repeat="item in $ctrl.items">
+                <a href="#" ng-click="$event.preventDefault(); selected.item = item">{{ item }}</a>
+            </li>
+        </ul>
+        Selected: <b>{{ $ctrl.selected.item }}</b>
+    </div>
+    <div class="modal-footer">
+        <button class="btn btn-primary" type="button" ng-click="ok()">OK</button>
+        <button class="btn btn-warning" type="button" ng-click="cancel()">Cancel</button>
+    </div>
+  </script> -->
+    </div>
+  </div>
+</div>

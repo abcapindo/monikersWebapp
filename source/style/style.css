@@ -1,27 +1,27 @@
-.buttondemoBasicUsage section {
-  background: #f7f7f7;
-  border-radius: 3px;
-  text-align: center;
-  margin: 1em;
-  position: relative !important;
-  padding-bottom: 10px; }
+/*.navbar-default {
+    background-color: #0099cc;
+    border-color: #0099cc;
+}
 
-.buttondemoBasicUsage md-content {
-  margin-right: 7px; }
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color:  #0099cc;
+    background-color: #0099cc;
+}*/
 
-.buttondemoBasicUsage section .md-button {
-  margin-top: 16px;
-  margin-bottom: 16px; }
+.point-3-color {
+  color: #c27dff;
+}
 
-.buttondemoBasicUsage .label {
-  position: absolute;
-  bottom: 5px;
-  left: 7px;
-  font-size: 14px;
-  opacity: 0.54; }
+.point-2-color {
+  color: #00cdff
+}
 
+.point-1-color {
+  color: #32ff98;
 
-/*
-Copyright 2016 Google Inc. All Rights Reserved.
-Use of this source code is governed by an MIT-style license that can be foundin the LICENSE file at http://material.angularjs.org/HEAD/license.
-*/
+}
+
+.nopadding {
+   padding: 0 !important;
+   margin: 0 !important;
+}
